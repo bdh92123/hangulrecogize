@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="585.0" spacing="5.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TitledPane collapsible="false" prefHeight="211.0" text="Chain Code">
+         <content>
+            <HBox spacing="10.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="151.0" prefWidth="160.0">
+                     <children>
+                        <AnchorPane fx:id="normPane" minWidth="-Infinity" prefHeight="151.0" prefWidth="160.0" />
+                     </children>
+                  </HBox>
+                  <VBox fx:id="chainPane" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox>
+                           <children>
+                              <Label text="Chosung Chain" />
+                              <Label fx:id="chosungChainLabel" layoutX="10.0" layoutY="10.0" />
+                           </children>
+                        </HBox>
+                        <HBox spacing="10.0">
+                           <children>
+                              <HBox fx:id="chosungChainBox" alignment="CENTER_LEFT" HBox.hgrow="ALWAYS" />
+                              <ComboBox fx:id="chosungList" prefWidth="60.0" />
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label text="Jongsung Chain" />
+                              <Label fx:id="jungsungChainLabel" layoutX="10.0" layoutY="10.0" />
+                           </children>
+                        </HBox>
+                        <HBox spacing="10.0">
+                           <children>
+                              <HBox fx:id="jungsungChainBox" alignment="CENTER_LEFT" HBox.hgrow="ALWAYS" />
+                              <ComboBox fx:id="jungsungList" prefWidth="60.0" />
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label text="Jongsung Chain" />
+                              <Label fx:id="jongsungChainLabel" layoutX="10.0" layoutY="10.0" />
+                           </children>
+                        </HBox>
+                        <HBox spacing="10.0">
+                           <children>
+                              <HBox fx:id="jongsungChainBox" alignment="CENTER_LEFT" HBox.hgrow="ALWAYS" />
+                              <ComboBox fx:id="jongsungList" prefWidth="60.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </content>
+      </TitledPane>
+      <HBox spacing="10.0">
+         <children>
+            <ImageView fx:id="chainImg" fitHeight="115.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true" />
+            <VBox spacing="10.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Normalized Chain Code" />
+                  <TextArea fx:id="normText" editable="false" prefHeight="40.0" />
+                  <AnchorPane prefHeight="38.0">
+                     <children>
+                        <Button fx:id="trainButton" mnemonicParsing="false" onAction="#onClick" prefHeight="40.0" text="Train" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </children>
+   <stylesheets>
+      <URL value="@../css/main.css" />
+   </stylesheets>
+
+</VBox>

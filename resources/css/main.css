@@ -1,0 +1,46 @@
+Button {
+    -fx-background-radius: 0;
+    -fx-background-color: #2980B9;
+    -fx-text-fill: white;
+}
+
+Button:hover {
+    -fx-background-color: #4699C8;
+}
+Button:pressed {
+    -fx-background-color: #084d8d;
+}
+Button.off {
+    -fx-background-color: gray;
+}
+Button.off:hover {
+    -fx-background-color: lightgray;
+}
+Button.off:pressed {
+    -fx-background-color: darkgray;
+}
+
+TextField {
+    -fx-background-color: white;
+    -fx-border-color: #084d8d;
+}
+#candidateBox Button {
+    -fx-font-size: 4em;
+}
+.titled-pane .title {
+    -fx-background-color: #2980B9;
+    -fx-background-radius: 0;
+    -fx-padding: 1em 0.8em;
+}
+
+.titled-pane .title .text {
+    -fx-fill: white;
+}
+
+#chainImg {
+    -fx-image: url(../img/chain.png);
+}
+
+#inputPane, #inputPane2 {
+    -fx-background-color: white;
+}
